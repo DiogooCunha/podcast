@@ -1,15 +1,14 @@
 import { PATHS } from "@/shared";
 import { Button } from "@/shared/ui/components/button";
-import React from "react";
 import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
   return (
-    <div className='flex min-h-screen flex-col justify-center items-center px-4 gap-y-5'>
+    <div className='flex min-h-screen flex-col justify-center items-center gap-y-5'>
       <h1 className='font-bold text-6xl'>
         Sorry, that’s not currently available
       </h1>
-      <p className='font-semibold text-neutral-400'>
+      <p className='font-semibold text-muted-foreground'>
         We can’t seem to find the page you are looking for.
       </p>
       <div className='mt-5 flex flex-col gap-y-1'>

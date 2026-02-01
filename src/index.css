@@ -5,6 +5,24 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+
+@theme {
+  --color-chocolate: #4d3026;
+  --color-deep-cyan: #323b46;
+  --color-deep-purple: #423643;
+  --color-deep-moss: #37443c;
+  --color-lemon: #fbe36a;
+}
+
 :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.147 0.004 49.25);

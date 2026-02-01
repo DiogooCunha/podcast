@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "tsc && eslint src --fix",
     "preview": "vite preview"
   },
   "dependencies": {
     "@base-ui/react": "^1.1.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@fontsource-variable/figtree": "^5.2.10",
+    "@mui/icons-material": "^7.3.7",
+    "@mui/material": "^7.3.7",
     "@remixicon/react": "^4.8.0",
     "@tailwindcss/vite": "^4.1.17",
     "class-variance-authority": "^0.7.1",
