@@ -16,5 +16,3 @@ jobs:
             if (labels.includes("do not merge")) {
               core.setFailed("PR has 'do not merge' label");
             }
-
-
