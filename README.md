@@ -1,3 +1,5 @@
-# React + TypeScript + Vite + shadcn/ui
+# Feature Sliced Design
+https://feature-sliced.design/docs/get-started/tutorial
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+# Mensagem de commit deve seguir:
+https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
