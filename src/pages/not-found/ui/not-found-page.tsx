@@ -14,7 +14,7 @@ const NotFoundPage = () => {
       <div className='mt-5 flex flex-col gap-y-1'>
         <Button
           asChild
-          className='rounded-full px-7 py-6 font-semibold cursor-pointer'
+          className='rounded-full px-7 py-6 font-semibold cursor-pointer hover:shadow-[0_0_40px_rgba(240,177,0,0.12)] transition-shadow duration-500'
         >
           <Link to={PATHS.HOME}>Go to home</Link>
         </Button>
