@@ -1,7 +1,29 @@
 import { Input } from '@/shared/ui/components/input'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
+import HeadsetOutlinedIcon from '@mui/icons-material/HeadsetOutlined';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import RecordVoiceOverOutlinedIcon from '@mui/icons-material/RecordVoiceOverOutlined';
 import React from 'react'
 
+const faq = [
+  {
+    icon: MicOutlinedIcon,
+    text: "What is an AI Podcast Maker?"
+  },
+  {
+    icon: HeadsetOutlinedIcon,
+    text: "Do I need audio editing skills to use it?"
+  },
+  {
+    icon: DescriptionOutlinedIcon,
+    text: "Does the AI write the podcast script?"
+  },
+  {
+    icon: RecordVoiceOverOutlinedIcon,
+    text: "Can I use my own voice?"
+  }
+]
 
 const HelpPage = () => {
   return (
@@ -9,13 +31,32 @@ const HelpPage = () => {
       <h1 className='font-bold text-6xl'>How can we help you?</h1>
       <div className='relative w-130 items-center mt-5 max-[622px]:w-72'>
         <SearchOutlinedIcon className='absolute left-3 top-1/2 -translate-y-1/2 text-black' />
-        
+
         <Input
           className='pl-10 !bg-white text-black'
           id="input-demo-api-key"
           type="text"
           placeholder="Search..."
         />
+      </div>
+      <div className='w-130 items-center max-[622px]:w-72'>
+        {faq.map((item, i) => {
+          const Icon = item.icon;
+
+          return (
+            <div
+              key={i}
+              className="flex items-center gap-3 py-3 border-b border-gray-600"
+            >
+              <Icon className="text-[oklch(0.852_0.199_91.936)] ml-3" />
+              <a href='#' className="font-semibold">{item.text}</a>
+            </div> // Adicionar link do href
+          );
+        })}
+      </div>
+      <div className='mt-5'>
+        <p>Need more help? Contact us:</p>
+        <p>aipodcastmaker@email.com</p> {/* Colocar email real */}
       </div>
     </div>
   )
