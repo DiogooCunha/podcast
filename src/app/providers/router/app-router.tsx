@@ -1,7 +1,7 @@
+import { Route, Routes } from "react-router-dom";
 import { NotFoundPage } from "@/pages";
 import { HomePage } from "@/pages/home";
 import { PATHS } from "@/shared";
-import { Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
   return (
