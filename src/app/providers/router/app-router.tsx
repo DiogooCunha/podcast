@@ -1,6 +1,4 @@
-import { Route, Routes } from "react-router-dom";
-import { NotFoundPage } from "@/pages";
-import { HomePage } from "@/pages/home";
+import { HelpPage, HomePage, NotFoundPage } from "@/pages";
 import { PATHS } from "@/shared";
 
 const AppRouter = () => {
@@ -8,6 +6,7 @@ const AppRouter = () => {
     <Routes>
       <Route path={PATHS.HOME} element={<HomePage />} />
       <Route path={PATHS.NOT_FOUND} element={<NotFoundPage />} />
+      <Route path={PATHS.HELP} element={<HelpPage />} />
     </Routes>
   );
 };

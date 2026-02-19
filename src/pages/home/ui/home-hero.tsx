@@ -30,8 +30,8 @@ const HomeHero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
-              size="lg"
-              className="text-base rounded-full px-7 py-6 font-semibold text-black cursor-pointer"
+              size='lg'
+              className='text-base rounded-full px-7 py-6 font-semibold text-black cursor-pointer hover:shadow-[0_0_40px_rgb(255_165_0)] transition-shadow duration-500'
             >
               Start listening for free
               <KeyboardArrowRightOutlinedIcon className="w-4 h-4 ml-1" />
