@@ -1,6 +1,5 @@
 import { HelpPage, HomePage, NotFoundPage } from "@/pages";
 import { PATHS } from "@/shared";
-import { Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
   return (

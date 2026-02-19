@@ -5,7 +5,12 @@ type FloatingCardProps = {
   children?: React.ReactNode;
 };
 
-const FloatingCard = ({ className, title, desc, children }: FloatingCardProps) => {
+const FloatingCard = ({
+  className,
+  title,
+  desc,
+  children,
+}: FloatingCardProps) => {
   return (
     <div
       className={`
@@ -24,7 +29,7 @@ const FloatingCard = ({ className, title, desc, children }: FloatingCardProps) =
       <p className="text-sm text-gray-300 mt-2">{desc}</p>
       {children}
     </div>
-  )
-}
+  );
+};
 
 export default FloatingCard;
